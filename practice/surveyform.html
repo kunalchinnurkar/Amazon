@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form id="survey-form">
+    <label id="name-label" for="name">Name</label>
+    <input type="text" id="name"  placeholder="Enter your Name" required>
+
+    <label id="email-label" for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+
+    <label id="number-label" for="age">Age(optional)</label>
+    <input type="number" id="number" name="age" placeholder="Age" min="5" max="95">
+
+
+      <p>Which option best describes your current role?</p>
+      <select id="dropdown">
+        <option value="" disabled selected>Select current role</option>
+        <option value="student">Student</option>
+        <option value="job">Full Time Job</option>
+        <option value="learner">Prefer not to say</option>
+      </select>
+
+      <p>Would you recommend this platform to a friend?</p>
+      <label>
+        <input 
+          type="radio" 
+          name="recommend" 
+          value="definitely" 
+          checked
+        /> Definitely
+      </label>
+      <label>
+        <input 
+          type="radio" 
+          name="recommend" 
+          value="maybe" 
+        /> Maybe
+      </label>
+      <label>
+        <input 
+          type="radio" 
+          name="recommend" 
+          value="not-sure" 
+        /> Not sure
+      </label>
+
+      <p>What would you like to see improved? <span class="clue">(Check all that apply)</span></p>
+      <label>
+        <input 
+          type="checkbox" 
+          value="front-end-projects" 
+        /> Front-end Projects
+      </label>
+      <label>
+        <input 
+          type="checkbox" 
+          value="back-end-projects" 
+        /> Back-end Projects
+      </label>
+      <label>
+        <input 
+          type="checkbox" 
+          value="videos" 
+        /> Videos
+      </label>
+     
+     <p>Any comments or suggestion?</p>
+     <textarea id="commetns" placeholder="Enter your comment here...">
+     </textarea>
+     </select>
+
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>
+
+<!--How to create checkbox and radio buttons
+<label>
+    <input
+        type="checkbox"
+        value="something write is attribute e.g.. ok"
+    >
+    OK
+</label>
+same for radio button:
+<label>
+    <input
+        type="radio"
+        name="something write is attribute e.g.. ok"
+        value="something write is attribute e.g.. ok"
+    >
+</label>
+
+<input> or <input/>
+-->
